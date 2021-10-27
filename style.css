@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  background: #e6e6e6;
+  background: #a29bfe;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,8 +15,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   cursor: pointer;
   transition: all 0.5s ease;
 }
@@ -40,6 +40,11 @@ body {
 }
 .burger::after {
   transform: translateY(12px);
+}
+
+.burger-menu.open {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
 }
 
 .burger-menu.open .burger {
